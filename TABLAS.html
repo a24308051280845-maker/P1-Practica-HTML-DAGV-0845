@@ -1,22 +1,28 @@
 <!--DIEGO ALEJANDRO GOMEZ VAZQUEZ 5-J -->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es"> <!-- Idioma de la página -->
 <head>
+    <!-- Para que se vean bien acentos y letras Ñ -->
     <meta charset="UTF-8">
+    <!-- Para que la página se adapte bien a pantallas de celular -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Nombre en la pestaña del navegador -->
     <title>Tablas en HTML</title>
 </head>
 
 <body>
+    <!-- Título principal -->
     <h1>Tipos de tablas</h1>
     <p>El objetivo fundamental de las tablas en HTML sera
         mostrar una serie de datos en forma ordenada,
         organizado en filas y columnas
     </p>
     <p>Para la creacion de una tabla intervienen diferentes elementos:</p>
+    <!-- <dl> es una lista de definiciones (sirve como un glosario) -->
     <dl>
+        <!-- <dt> es el término que vas a definir -->
         <dt>Table</dt>
+        <!-- <dd> es la descripción o significado del término -->
         <dd>
             Es la marca de comienzo de la tabla. Este elemento requiere
             la marca de cierre.
@@ -33,8 +39,11 @@
         </dd>
     </dl>
     <h2>Ejemplo</h2>
+    <!-- <table> crea la tabla. border="1" le dibuja los bordes a las celdas -->
     <table border="1">
+        <!-- <tr> crea una FILA -->
         <tr>
+            <!-- <td> crea una CELDA normal de datos -->
             <td>Ciudad de Mexico</td>
             <td>9.2 millones</td>
         </tr>
@@ -47,6 +56,7 @@
             <td>3.9 millones</td>
         </tr>
     </table>
+
     <h2>Tabla con encabezado</h2>
     <p>La caracteristicas de esta tabla es que se le agrega a las celdas 
         el encabezado correspondiente, esto solo aplicaria a la primera
@@ -55,6 +65,7 @@
     </p>
     <table border="1">
         <tr>
+            <!-- <th> crea una celda de ENCABEZADO (el texto sale centrado y en negrita) -->
             <th>Ciudad</th>
             <th>Cantidad de habitantes</th>
         </tr>
@@ -76,6 +87,7 @@
         inmediatamente despues de abrir la etiqueta <em>table</em>.
     </p>
     <table border="1">
+        <!-- <caption> pone un TÍTULO general centrado arriba de toda la tabla -->
         <caption>Poblacion de las ciudades mas concurridas de Mexico</caption>
         <tr>
             <th>Ciudad</th>
